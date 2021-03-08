@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrinnk-to-fit=no">
     
-    <link rel="stylesheet" type="text/css" href="./formulario/formulario.css" media="screen"
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
     
     <title>Cadastro</title>
 </head>
