@@ -8,6 +8,21 @@
     <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"/>
     
     <title>Cadastro</title>
+    
+    <script>
+    function salvarForm(){
+       if (localStorage.cont) {
+          localStorage.cont = Number(localStorage.cont)+1;
+       } else {
+          localStorage.cont = 1;
+       }
+       
+       cad = document.getElementById('nome').value + ';' + document.getElementById('sobrenome').value + ';' + document.getElementById('email').value + ';' 
+       + document.getElementById('devweb').value + ';' + document.getElementById('senioridade').value + ';' + document.getElementById('tecnologia1');
+       localStorage.setItem("cad_"+localStorage.cont,cad);
+    }
+    </script>
+    
 </head>
 <body>
     
