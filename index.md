@@ -1,37 +1,93 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrinnk-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen"
+    
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Cadastro de DEVs</h1><br>
+        <p id="subtitulo">Complete suas informações</p><br>
+        <br>
+    </div>
 
-You can use the [editor on GitHub](https://github.com/marcofeliponi/formulario-html-css/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
 
-### Markdown
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="campo">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label> 
+                <input type="radio" name="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" valeu="fullstack">Fullstack
+            </label>
+        </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
 
-```markdown
-Syntax highlighted code block
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia1" value="CSS">
+                <label for="tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia1" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia1" value="PHP">
+                <label for="tecnologia4">PHP</label>
+                <input type="checkbox" id="tecnologia5" name="tecnologia1" value="C#">
+                <label for="tecnologia5">C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia1" value="Python">
+                <label for="tecnologia6">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia1" value="Java">
+                <label for="tecnologia7">Java</label>
+            </div>
+        </fieldset>
 
-# Header 1
-## Header 2
-### Header 3
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco da sua experiência:</strong></label>
+            <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
 
-- Bulleted
-- List
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
 
-1. Numbered
-2. List
+        </form>
 
-**Bold** and _Italic_ and `Code` text
+    </body>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marcofeliponi/formulario-html-css/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+</html>
